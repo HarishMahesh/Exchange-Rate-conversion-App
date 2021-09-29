@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Exchange Rate Converter</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1 total-container">
+                <div class="row">
+                    <div class="col heading-part">
+                        <h3>Currency Rate Converter</h3>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="Amount-field">
+                            <h6>Amount</h6>
+                        </label> 
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="number" id="Amount-field">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <label for="ccy-from">
+                            <h6>From</h6>
+                        </label> 
+                    </div>
+
+                    <div class="col-5 offset-2">
+                        <label for="ccy-to">
+                            <h6>To</h6>
+                        </label> 
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <select name="currency-from" id="ccy-from">
+                            <!-- <option value="0">---Select any currency---</option> -->
+                        </select>
+                    </div>
+                    <div class="col-2 arrow-symbol">
+                        <h5>>></h5>
+                    </div>
+                    <div class="col-5">
+                        <select name="currency-to" id="ccy-to">
+                            <!-- <option value="0">---Select any currency---</option> -->
+                        </select>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input class="output-display" type="text">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class = 'col-8 offset-2'>
+                        <button onclick="displayOutput()">Get Exchange rates</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
